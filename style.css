@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: teal;
+
+}
+
+header {
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+}
+
+header div.tytul {
+    /* background-color: rgb(0, 170, 170); */
+    background-image: url(drae.jpeg);
+    background-size: cover;
+    background-position: top;
+    /* background-blend-mode: color-burn; */
+    width: 80vw;
+    margin: auto;
+    height: 75vh;
+    position: relative;
+}
+
+
+@keyframes crazyfukinshadow {
+    0% {
+        text-shadow: violet 2px 2px;
+    }
+
+    10% {
+        text-shadow: blue -2px -2px;
+    }
+
+    20% {
+        text-shadow: violet 0px 2px;
+    }
+
+    30% {
+        text-shadow: blue -2px 0px;
+    }
+
+    40% {
+        text-shadow: violet 2px -2px;
+    }
+
+    50% {
+        text-shadow: blue 2px -2px;
+    }
+
+    60% {
+        text-shadow: violet -2px 2px;
+    }
+
+    70% {
+        text-shadow: white 5px -2px;
+    }
+
+    80% {
+        text-shadow: violet 2px 3px;
+    }
+
+    90% {
+        text-shadow: greenyellow 0px 6px;
+    }
+
+}
+
+header div h1.tytul {
+    position: absolute;
+    /* width: 50%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: lowercase;
+    display: block;
+    bottom: 20%;
+    left: 10%;
+    max-width: 80%;
+    font-size: 70px;
+    background-color: rgba(228, 125, 125, 0.5);
+    padding: 0;
+}
+
+nav {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: black;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+nav div {
+    /* display: flex;
+    flex-direction: row;
+    height: 21vh;
+    width: 34vw;
+    min-width: 100px;
+    background-color: rgba(43, 86, 226, 0.742);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 33px;
+    font-size: 30px;
+    transition: 1s; */
+
+}
+
+main a {
+    padding: 1em;
+    justify-self: center;
+    align-self: center;
+    /*    background-color: red;*/
+    text-decoration: none;
+
+}
+
+nav div a {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1s;
+    text-decoration: none;
+    display: flex;
+    height: 21vh;
+    width: 34vw;
+    /* min-width: 100px; */
+    background-color: rgba(43, 86, 226, 0.742);
+    border-radius: 33px;
+    font-size: 25px;
+    transition: 1s;
+    line-height: 21vh;
+    justify-content: center;
+}
+
+nav div:hover a {
+    color: greenyellow;
+    animation: crazyfukinshadow 1s linear infinite;
+    background-color: black;
+
+
+}
+
+nav div:hover {
+    background-color: black;
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: rgb(189, 255, 255);
+}
+
+
+main section {
+    margin: 0 5vh 0;
+    padding-top: 50px;
+    font-size: 25px;
+    height: 50vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main section:nth-child(even) {
+    text-align: right;
+}
+
+.callmemaybe {
+    position: fixed;
+    bottom: 50px;
+    left: 5vw;
+    background-color: royalblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 30%;
+    transition: 0.2s;
+    text-shadow: 1px 1px white;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.callmemaybe:hover {
+    opacity: 90%;
+    background-color: greenyellow;
+    text-shadow: -10px 1px white;
+    /* transform: rotate(180deg); */
+}
+
+.callmemaybe:hover i {
+    left: 60%;
+}
+
+
+.callmemaybe i {
+    position: absolute;
+    color: black;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.back a {
+    color: black;
+    text-shadow: rgb(127, 127, 255) 1px 1px;
+    transition: 1s;
+}
+
+.back a:hover {
+    color: rgb(66, 66, 66);
+    text-shadow: rgb(127, 127, 255) 1px 50px;
+}
+
+footer {
+    background-color: black;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+footer img {
+    position: relative;
+    bottom: 150px;
+    left: 50vw;
+    transform: translate(-50%);
+    opacity: 40%;
+    animation: rotatione 180s linear infinite;
+    transition: 2s;
+}
+
+
+footer img:hover {
+    opacity: 100%;
+
+}
+
+
+@keyframes rotatione {
+    0% {
+        transform: translate(-50%);
+    }
+
+    25% {
+        transform: translate(-50%) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(-50%) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(-50%) rotate(270deg);
+    }
+
+
+}
+
+.whiteNow {
+    background-color: white;
+}
+
+
+.blackfieldContainer {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    z-index: -2;
+
+}
+
+.blackfield {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.nakladka {
+    opacity: 1;
+    z-index: 1;
+}
+
+.komunikat {
+    position: fixed;
+    width: 70vw;
+    max-width: 1000px;
+    height: 400px;
+    background-color: cadetblue;
+    opacity: 1;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin: 50vh 50vw;
+    border-radius: 30px;
+    opacity: 0.9;
+    min-width: 400px;
+}
+
+
+.komunikat p {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-transform: lowercase;
+    display: inline-block;
+    left: 50px;
+
+    top: 20px;
+    animation: crazyfukinshadow 10s ease-in infinite;
+
+
+}
+
+form * {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: none;
+}
+
+
+form .email {
+    top: 80px;
+    padding: 3px 5px;
+
+}
+
+form .wiadomosc {
+    top: 120px;
+    bottom: 120px;
+    text-align: justify;
+    vertical-align: text-top;
+    padding: 0 5px;
+}
+
+form .wiadomosc,
+form .email {
+    left: 40px;
+    width: calc(100% - 90px);
+}
+
+
+form button {
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 6px 0;
+    width: 300px;
+    border-radius: 14px;
+    background-color: rgb(43, 86, 226, 0.742);
+    color: white;
+
+}
+
+form button:hover {
+    background-color: rgb(60, 100, 230, 0.742);
+
+}
+
+form ::placeholder {
+    color: grey;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+
+@media (min-width: 800px) {
+    nav div {
+        width: 34vw;
+        font-size: 20px;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    nav div a {
+        height: 8vh;
+        width: 100%;
+        line-height: 8vh;
+    }
+
+    nav div {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1600px) {
+
+
+    nav {
+        height: 8vh;
+    }
+
+    nav div {
+        width: 140px;
+    }
+
+    nav div a {s
+        height: 8vh;
+        font-size: 18px;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    header div.tytul h1 {
+        font-size: 40px;
+    }
+
+    nav div a {
+        font-size: 20px;
+    }
+
+    html {
+        min-width: 400px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
